@@ -1,7 +1,7 @@
 # FIR-FILTER-DESIGN
 # EXP 4 c: Design-of-FIR-Digital-Filter-using-Hanning-Window
 
-# AIM 1:  To perform Design-of-LOWPASS FIR-Digital-Filter-using-Hanning-Window using SCILAB.
+# AIM 1:  To perform Design-of-LOWPASS FIR-Digital-Filter-using-Hanning-Window using SCILAB..
 
 # APPARATUS REQUIRED: 
 PC installed with SCILAB. 
