@@ -1,59 +1,37 @@
 # FIR-FILTER-DESIGN
 # EXP 4 c: Design-of-FIR-Digital-Filter-using-Hanning-Window
 
-# AIM 1:  To perform Design-of-LOWPASS FIR-Digital-Filter-using-Hanning-Window using SCILAB.
+AIM:
+To generate design of low pass FIR digital filter using SCILAB
 
-# APPARATUS REQUIRED: 
-PC installed with SCILAB. 
+APPARATUS REQUIRED:
+PC Installed with SCILAB
 
-# PROGRAM: 
+PROGRAM
+clc; clear; close;
 
+// Input values M = input('Enter the Odd Filter Length = '); Wc = input('Enter the Digital Cut off frequency = ');
 
-# OUTPUT: 
+// Centre value alpha = (M - 1)/2;
 
+// Ideal LPF impulse response for n = 1:M if (n == alpha + 1) then hd(n) = Wc/%pi; else hd(n) = sin(Wc*((n-1)-alpha)) / (((n-1)-alpha)*%pi); end end
 
-# RESULT: 
+// Hanning Window for n = 1:M W(n) = 0.5 - (0.5cos((2%pi*(n-1))/(M-1))); end
 
-Thus design of low pass FIR digital filter using-Hanning-Window waveforms were plotted and output was verified.
+// Windowing process h = hd .* W;
 
-# AIM 2: To perform DESIGN OF HIGH PASS FIR DIGITAL FILTERS using SCILAB.
+// Display filter coefficients disp(h, 'Filter Coefficients are');
 
-# APPARATUS REQUIRED: 
-PC installed with SCILAB. 
+// Frequency response [hzm, fr] = frmag(h, 256);
 
-# PROGRAM: 
+// Magnitude response subplot(2,1,1); plot(2*fr, hzm); xlabel('Normalized Digital Frequency W'); ylabel('Magnitude'); title('Frequency Response of FIR LPF using Hanning Window');
 
+// Magnitude response in dB hzm_dB = 20*log10(hzm);
 
-# OUTPUT: 
+subplot(2,1,2); plot(2*fr, hzm_dB); xlabel('Normalized Digital Frequency W'); ylabel('Magnitude in dB'); title('Frequency Response of FIR LPF using Hanning Window');
 
+OUTPUT
 
-# RESULT: 
-Thus design of HIGH pass FIR digital filter using-Hanning-Window waveforms were plotted and output was verified.
-
-# AIM 3: To perform DESIGN OF BAND PASS FIR DIGITAL FILTERS using SCILAB.
-
-# APPARATUS REQUIRED: 
-PC installed with SCILAB. 
-
-# PROGRAM: 
-
-
-# OUTPUT: 
-
-
-# RESULT: 
-Thus design of BAND pass FIR digital filter using-Hanning-Window waveforms were plotted and output was verified.
-
-# AIM 4: To perform DESIGN OF BAND STOP FIR DIGITAL FILTER using SCILAB.
-
-# APPARATUS REQUIRED: 
-PC installed with SCILAB. 
-
-# PROGRAM: 
-
-
-# OUTPUT: 
-
-
-# RESULT: 
-Thus design of BAND STOP FIR digital filter using-Hanning-Window waveforms were plotted and output was verified.
+<img width="761" height="722" alt="image" src="https://github.com/user-attachments/assets/98ff9686-5322-4305-b6ce-3acd7421b146" />
+RESULT
+Thus, the FIR Low-Pass Filter using the Hanning Window was successfully designed and implemented in Scilab.
