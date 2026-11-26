@@ -4,7 +4,7 @@
 # AIM 1:  To perform Design-of-LOWPASS FIR-Digital-Filter-using-Hanning-Window using SCILAB.
 
 # APPARATUS REQUIRED: 
-PC installed with SCILAB. 
+PC installed with SCILAB. .
 
 # PROGRAM: 
 
