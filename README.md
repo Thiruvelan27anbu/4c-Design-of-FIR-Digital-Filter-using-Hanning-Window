@@ -33,5 +33,6 @@ subplot(2,1,2); plot(2*fr, hzm_dB); xlabel('Normalized Digital Frequency W'); yl
 OUTPUT
 
 <img width="761" height="722" alt="image" src="https://github.com/user-attachments/assets/98ff9686-5322-4305-b6ce-3acd7421b146" />
+
 RESULT
 Thus, the FIR Low-Pass Filter using the Hanning Window was successfully designed and implemented in Scilab.
